@@ -2,6 +2,7 @@
 
  @section('content')
   <h3>Bus Registration Page</h3>
+  <div class="col-md-8">
    {!! Form::open(['url' => 'foo/bar']) !!}
     <div class="form-group">
     	{{form::label('plateNo', 'Plate Number')}}
@@ -13,4 +14,5 @@
     </div>
     {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
   {!! Form::close() !!}
+  </div>
  @endsection
