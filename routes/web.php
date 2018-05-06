@@ -14,7 +14,7 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/addadmin', 'PagesController@addadmin');
-Route::get('/reguser', 'PagesController@reguser');
+Route::get('/reguser', ['as'=>'reguser','uses'=>'PagesController@reguser']);
 Route::get('/regbus', 'PagesController@regbus');
 Route::get('/regbusowner', 'PagesController@regbusowner');
 
