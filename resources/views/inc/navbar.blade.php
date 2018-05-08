@@ -10,6 +10,9 @@
 			</button>
 			<a class="navbar-brand" href="{{ action('PagesController@index')}}"> <img src="{{URL::asset('/image/logo4.png')}}" alt="SmartCityBus" height="34px" width="150px"></a>
 		</div>
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="#">login</a></li>
+		</ul>
 		<div id="navbar" class="collapse navbar-collapse navbar-right">
 			<ul class="nav navbar-nav">
 				<li ><a href="{{ action('PagesController@addadmin') }}">Add admin</a></li>
